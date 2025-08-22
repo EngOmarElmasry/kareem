@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>صفحة تعليمية للصفوف الأساسية</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            direction: rtl; /* لجعل الكتابة من اليمين لليسار */
+            text-align: right;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .video-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            padding-bottom: 10px;
+        }
+
+        .video-card h3 {
+            padding: 10px 15px;
+            margin: 0;
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        .video-card p {
+            padding: 0 15px;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* نسبة أبعاد 16:9 للفيديو */
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>مكتبة الفيديوهات التعليمية 📚</h1>
+            <p>أهلاً بكم في صفحتنا التعليمية! استكشفوا فيديوهات الشرح الممتعة والمفيدة.</p>
+        </header>
+
+        <div class="video-grid">
+            
+            <div class="video-card">
+                <div class="video-container">
+                    <video controls loop>
+                        <source src="/سيكو سيكو 2025.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <h3>شرح درس الرياضيات: الأعداد 🔢</h3>
+                <p>درس شيق لشرح الأعداد الأساسية وكيفية العد بطرق مبسطة وممتعة.</p>
+            </div>
+
+            <div class="video-card">
+                <div class="video-container">
+                   <video controls loop autoplay>
+                        <source src="/سيكو سيكو 2025.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <h3>فيديو العلوم: دورة حياة النبات 🌱</h3>
+                <p>تعلموا معنا كيف تنمو النباتات من بذرة حتى تصبح شجرة كبيرة.</p>
+            </div>
+
+            <div class="video-card">
+                <div class="video-container">
+                    <video controls loop autoplay>
+                        <source src="/سيكو سيكو 2025.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <h3>تعليم اللغة العربية: الحروف ✍️</h3>
+                <p>تعلم الحروف الأبجدية العربية بطريقة سهلة وممتعة مع الرسوم المتحركة.</p>
+            </div>
+
+            </div>
+    </div>
+
+</body>
+</html>
